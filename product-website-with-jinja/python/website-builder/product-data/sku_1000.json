@@ -1,0 +1,21 @@
+{
+	"sku_id": "1000",
+	"name": "Fading Rainbow Pen",
+	"description": "Our unpatented Fading Rainbow Pen seems to write just like a regular pen, but once on paper the ink slowly fades until it eventually becomes invisible.  You'll love how useless these pens are!",
+	"has_color_options": true,
+	"default_color_option": "blue",
+	"color_options": {
+		"blue": {
+			"color_name": "blue",
+			"color_code": "#1616CC"
+		},
+		"red": {
+			"color_name": "red",
+			"color_code": "#CC1616"
+		},
+		"green": {
+			"color_name": "green",
+			"color_code": "#16CC16"
+		}
+	}
+}

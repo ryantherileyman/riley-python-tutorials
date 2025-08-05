@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>{{ product_data.name | escape }} | The Pretend Store</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Description" content="{{ meta_description }}">
+</head>
+
+<body>
+	
+	<h1>{{ product_data.name | escape }}</h1>
+	
+	<section>
+		<div class="product-sku">SKU # {{ product_data.sku_id | escape }}</div>
+		
+		<p>{{ product_data.description | escape }}</p>
+		
+		{% if product_data.has_color_options -%}
+		<p>
+			Available in {{ product_data.color_options | length }} colors:
+			<ul style="list-style: none;">
+			{%- for curr_color_option in product_data.color_options.values() %}
+				<li><span style="color: {{ curr_color_option.color_code }};">●</span> {{ curr_color_option.color_name }}</li>
+			{%- endfor %}
+			</ul>
+		</p>
+		<p>
+			The default color is {{ product_data.default_color_option }}.
+		</p>
+		{%- endif %}
+	</section>
+	
+	<footer>
+		<p>
+			<a href="../index.html">Back to Home</a>
+		</p>
+	</footer>
+	
+</body>
+
+</html>

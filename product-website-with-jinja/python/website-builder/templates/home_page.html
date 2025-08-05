@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>The Pretend Store</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Description" content="A fake store with useless products, intended to illustrate basic use of the Jinja2 templating library.">
+</head>
+
+<body>
+	
+	<h1>The Pretend Store</h1>
+	
+	<p>
+		Here at The Pretend Store, we pride ourselves on pretending that we're producing totally useless products that nobody would ever use.
+		In reality, this is just a primer for Python developers looking to learn the Jinja2 templating library.
+	</p>
+	
+	<section>
+		<p>
+			Take a look at our fake products below:
+			<ul>
+			{%- for curr_sku_id in sku_id_list %}
+				<li><a href="products/sku_{{ curr_sku_id }}.html">SKU # {{ curr_sku_id }}</a></li>
+			{%- endfor %}
+			</ul>
+		</p>
+	</section>
+	
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+{
+	"sku_id": "1002",
+	"name": "Collapsible Two-Legged Lawn Chair",
+	"description": "These colorful lawn chairs that we're just pretending we sell only have two legs.  As long as there's no wind, you can prop them up so that they stand up straight.  But as soon as you try to sit down, they'll collapse and you'll fall.",
+	"has_color_options": true,
+	"default_color_option": "beige",
+	"color_options": {
+		"beige": {
+			"color_name": "beige",
+			"color_code": "#F5F5DC"
+		},
+		"blue": {
+			"color_name": "blue",
+			"color_code": "#1616CC"
+		},
+		"green": {
+			"color_name": "green",
+			"color_code": "#168816"
+		}
+	}
+}
